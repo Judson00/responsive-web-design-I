@@ -294,6 +294,13 @@ section.marketing-banner{
 	height: 15%;
 }
 
+section.content-bottom div{
+	margin-top: 5%;
+	margin-right: 0px;
+	margin-bottom: 15%;
+	padding:0px;
+}
+
 } 
 
 @media (max-width: 500px){
