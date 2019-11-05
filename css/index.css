@@ -1,3 +1,429 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* code starts here */
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* set background color for body */
+body{
+background-color: white;
+color: black;
+}
+
+/* set styles for entire container */
+.container{
+display:flex;
+flex-direction: column;
+justify-content: center;
+padding: 40px;
+}
+
+/* style for nav area */
+header{
+display: flex;
+justify-content: space-between;
+}
+
+/* style for logo on hover */
+header img:hover{
+background-color: yellow;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	align-items: center;
+	/* position: fixed; */
+	}
+
+	/* style for links in nav area */
+header nav a{ 
+	color: #9dbec9;
+	text-decoration: none;
+	}
+
+
+header nav a:hover{
+	color:black;
+}
+
+/* style for navigation bar */
+.navigation{
+display:flex;
+justify-content: space-evenly;
+width: 100%;
+flex-wrap: wrap;
+}
+
+/* style for navigation bar on hover */
+.navigation:hover{
+color:#000000;
+background-color: #d6d6d6;
+}
+
+/*Set styles for marketing-banner*/
+section.marketing-banner{
+margin: 40px 0;
+display: flex;
+justify-content:center;
+padding: 10% 0 10% 0;
+border-bottom: 1px solid black;
+}
+
+/* styling innovation, on, and demand along with the button */
+section div.innovation{
+text-align: center;
+padding: 40px;
+}
+
+/* styles for Innovation On and Demand (they are in span elements) */
+div.innovation h1 span{
+font-size: 72px;
+line-height: 72px;
+display:flex;
+justify-content: center;
+}
+
+/* styling for the button */
+div.innovation button{
+width: 160px;
+padding: 4px;
+}
+
+/* styling for the image (header-img, round pic of code snippet) */
+section .header-image{
+width: 35%;
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+padding:1%;
+}
+
+/* styles for content-top */
+section.content-top{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+/* styling for the paragraphs in content-top (feature and about) */
+section div p{
+text-align:justify;
+line-height: 1.25em;
+padding:20px;
+}
+
+/* styling for divs in content top (feature and about divs) */
+section.content-top div{
+width: 47%;
+display: inline-block;
+}
+
+/* styling for first-child (feature) */
+section.content-top div:first-child{
+margin-right: 40px;
+}
+
+/* styling for mid-page-accent pic */
+.mid-page-accent{
+width: 100%;
+height:25%;
+background-image:url("../img/mid-page-accent.jpg");
+background
+}
+
+
+/* styling for content-bottom (services product, vision) */
+section.content-bottom {
+width: 100%;
+border-bottom: 1px solid black;
+padding-bottom: 30px;
+display: flex;
+justify-content: space-evenly;
+}
+
+/* styling for content-bottom divs (service, product, vision) */
+section.content-bottom div{
+margin-right:30px;
+padding: 20px;
+}
+
+section.content-bottom div h2{
+margin-right:30px;
+}
+
+/* styling for content-bottom last child (service) */
+section.content-bottom div:last-child{
+margin-right: 0;
+}
+
+/* styling for content-bottom paragraphs (service, product, vision) */
+section.content-bottom div p{
+text-align: justify;
+}
+
+/* styling for footer section*/
+footer{
+width: 100%;
+line-height: 1.25em;
+}
+
+/* styling for copyright */
+footer div.copyright{
+padding: 20px 0 40px 0;
+text-align: center;
+}
+
+/* styling for contact info */
+footer div.contact{
+width: 200px;
+}
+
+/* styling for contact info (strong elements (address, phone, email)) */
+footer strong{
+display: block;
+margin-bottom: 10px;
+}
+
+/* styling for address */
+footer .address{
+width:100%;
+}
+
+/* @media commands, background changes color */
+@media (max-width: 800px) {
+.navigation{
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+img.logo{
+	padding-bottom: 5%;
+}
+
+ .header-img{
+	display: none;
+}
+
+section.marketing-banner{
+	margin-top: 0;
+	padding-top: 4%;
+}
+
+.innovation{
+	justify-content: center;
+}
+.innovation span{
+	justify-content: center;
+}
+.mid-page-accent{
+	height: 15%;
+}
+
+section.content-bottom div{
+	margin-top: 5%;
+	margin-right: 0px;
+	margin-bottom: 15%;
+	padding:0px;
+}
+
+} 
+
+@media (max-width: 500px){
+
+nav{
+	flex-direction: column;
+}
+
+.navigation:hover{
+	background-color: white;
+}
+
+img.logo:hover{
+	background-color: white;
+}
+
+a:first-child{
+	text-align: center;
+	padding: 5%;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	width: 100%;
+}
+
+a{
+	text-align: center;
+	padding: 5%;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+section.content-top{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+section.content-top div:first-child{
+	margin-right:0;
+}
+
+section.content-top div{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 4%;
+}
+
+section.content-top p{
+	width: 100%;
+}
+
+.content-top div{
+	margin-top: 5%;
+	margin-bottom: 15%;
+}
+
+section.content-top h2{
+	margin-top:0;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+section.content-top p{
+	padding:0
+}
+
+
+.mid-page-accent{
+	height: 8%;
+}
+
+	section.content-bottom{
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+	
+	section.content-bottom div:first-child{
+		margin-right:0;
+	}
+	
+	section.content-bottom div{
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	
+	section.content-bottom p{
+		width: 100%;
+	}
+	
+	.content-bottom div{
+		margin-top: 5%;
+		margin-bottom: 15%;
+	}
+	
+	section.content-bottom h2{
+		margin-top:0;
+		display: flex;
+		justify-content: flex-start;
+		align-content: flex-start;
+	}
+	
+	section.content-bottom p{
+		padding:0
+	}
+
+	div.contact{
+		margin-top:10%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	footer strong{
+		display: flex;
+	}
+
+	.contact a{
+		border-bottom: 1px solid white;
+	}
+}
 
