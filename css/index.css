@@ -344,8 +344,9 @@ section.content-top div:first-child{
 }
 
 section.content-top div{
+	width: 100%;
 	text-align: center;
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 }
 
 section.content-top p{
