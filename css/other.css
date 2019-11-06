@@ -62,7 +62,7 @@ margin: 2%;
 padding: 1% 2% 1% 1%;
 }
 
-/* styling for middlecolumn (digital marketing, web development */
+/* styling for middlecolumn (digital marketing, web development) */
 .middlecolumn{
 display: flex;
 width: 100%;
@@ -98,7 +98,7 @@ margin: 2%;
 padding: 1% 2% 1% 1%;
 }
 
-/* styling for bottom column, ios development, android */development 
+/* styling for bottom column, ios development, android */
 .bottomcolumn{
 display: flex;
 width: 100%;
@@ -108,7 +108,7 @@ justify-content: space-evenly;
 }
 
 
-/* provides space between ios development and android */development 
+/* provides space between ios development and android */
 .bottomcolumn .ios-dev{
 margin: 0% 3% 0% -2%;
 border:1px solid black;
